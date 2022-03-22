@@ -1,0 +1,44 @@
+{
+  "name": "WhileActivity",
+  "description": "Blank Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.5.0]",
+    "UiPath.Mail.Activities": "[1.3.0]",
+    "UiPath.System.Activities": "[18.4.2]",
+    "UiPath.UIAutomation.Activities": "[18.4.3]",
+    "UiPath": "[10.0.6929.25268]",
+    "UiPath.Vision": "[1.2.0]",
+    "UiPath.FTP.Activities": "[1.0.6710.16240]",
+    "UiPath.Script.Activities": "[1.0.6710.16240]",
+    "UiPathTeam.File.Activities": "[1.0.4]",
+    "UiPath.CefSharpBundle": "[1.0.0]",
+    "UiPath.Cognitive.Activities": "[2.2.0]",
+    "UiPath.Credentials.Activities": "[1.1.6479.13204]",
+    "UiPath.Cryptography.Activities": "[1.0.6863.32236]",
+    "UiPath.Database.Activities": "[1.2.6863.32528]",
+    "UiPath.IntelligentOCR.Activities": "[1.4.0]",
+    "UiPath.Java.Activities": "[1.0.6863.33114]",
+    "UiPath.PDF.Activities": "[1.3.0]",
+    "UiPath.Python.Activities": "[1.1.6863.33404]",
+    "UiPath.Terminal.Activities": "[1.3.0]",
+    "UiPath.WebAPI.Activities": "[1.3.0]",
+    "UiPath.Word.Activities": "[1.3.0]",
+    "UiPathTeam.Gmail.Activities": "[1.0.6822.33137]"
+  },
+  "schemaVersion": "3.2",
+  "studioVersion": "17.1.6522.14204",
+  "projectVersion": "1.0.6557.25368",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ]
+  },
+  "projectType": "Workflow",
+  "libraryOptions": {
+    "includeOriginalXaml": false,
+    "privateWorkflows": []
+  }
+}
