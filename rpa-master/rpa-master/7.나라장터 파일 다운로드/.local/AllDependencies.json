@@ -825,7 +825,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win7-x86": {
+    ".NETFramework,Version=v4.6.1/win10-x64": {
       "AvalonEdit/5.0.3": {
         "type": "package",
         "compile": {
@@ -2425,9 +2425,9 @@
     "restore": {
       "projectUniqueName": "나라장터_파일_다운로드",
       "projectName": "나라장터_파일_다운로드",
-      "projectPath": "D:\\big\\RPA\\rpa-master\\rpa-master\\7.나라장터 파일 다운로드\\.local",
+      "projectPath": "F:\\big\\RPA\\rpa-master\\rpa-master\\7.나라장터 파일 다운로드\\.local",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\big\\RPA\\rpa-master\\rpa-master\\7.나라장터 파일 다운로드\\.local"
+      "outputPath": "F:\\big\\RPA\\rpa-master\\rpa-master\\7.나라장터 파일 다운로드\\.local"
     },
     "frameworks": {
       "net461": {
@@ -2453,7 +2453,12 @@
             "version": "[19.11.1, 19.11.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+      }
+    },
+    "runtimes": {
+      "win10-x64": {
+        "#import": []
       }
     }
   }

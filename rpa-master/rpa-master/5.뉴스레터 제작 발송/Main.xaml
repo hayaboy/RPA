@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="788,2215.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UipathTeam.String.Activities;assembly=LevenshteinAlgorithm" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="758,2219" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UipathTeam.String.Activities;assembly=LevenshteinAlgorithm" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="25">
       <x:String>System.Activities</x:String>
@@ -29,7 +29,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -49,6 +49,8 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -56,7 +58,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Flowchart sap:VirtualizedContainerService.HintSize="768,2155.2" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap:VirtualizedContainerService.HintSize="768,2154" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intTargetNewsCount" />
       <Variable x:TypeArguments="x:String" Name="strRecentNewsCount" />
@@ -84,7 +86,7 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 100,107.7 100,143.6</av:PointCollection>
         <x:Double x:Key="Height">2118.4</x:Double>
         <x:Double x:Key="Width">734.4</x:Double>
@@ -97,7 +99,7 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,943.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,112.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,113</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence sap2010:Annotation.AnnotationText="1-5. 뉴스 데이터를 추출하고 브라우저를 닫는다." DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="200,112.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -170,7 +172,7 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,1113.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,53</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="뉴스레터목록.xlsx">
@@ -201,7 +203,7 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">460,1017.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,144.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,145</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:WriteTextFile sap2010:Annotation.AnnotationText="현재 검색 건수를 메모장에 기록한다.&#xA;&#xA;3-4. 검색건수를 메모장에 저장한다." DisplayName="Write Text File" FileName="총뉴스건수.txt" sap:VirtualizedContainerService.HintSize="200,144.8" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[intNowNewsCount.ToString]">
@@ -217,7 +219,7 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">230,1311.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,97</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">330,1408.4 330,1471.6</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -251,7 +253,7 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">230,1471.6</av:Point>
-              <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+              <av:Size x:Key="ShapeSize">200,97</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">330,1568.4 330,1598.4 100,1598.4 100,1631.6</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -379,7 +381,7 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">0,1631.6</av:Point>
-                  <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                  <av:Size x:Key="ShapeSize">200,97</av:Size>
                   <av:PointCollection x:Key="ConnectorLocation">200,1680 230,1680</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -418,7 +420,7 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">230,1631.6</av:Point>
-                      <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                      <av:Size x:Key="ShapeSize">200,97</av:Size>
                       <av:PointCollection x:Key="ConnectorLocation">430,1680 460,1680</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -456,7 +458,7 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">460,1631.6</av:Point>
-                          <av:Size x:Key="ShapeSize">200,96.8</av:Size>
+                          <av:Size x:Key="ShapeSize">200,97</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">560,1631.6 560,1162.4</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -503,7 +505,7 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">230,1109.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,160.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,161</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">330,1270.4 330,1311.6</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -614,11 +616,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,143.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,84</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">200,185.6 230,185.6 230,240 250,240</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,82</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">200,184.6 230,184.6 230,237.6 250,237.6</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="1. 주요 변수 설정" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="1. 주요 변수 설정" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="200,82" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
@@ -666,7 +668,7 @@
                 <OutArgument x:TypeArguments="x:String">[strMailFrom]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">wtoday@naver.com</InArgument>
+                <InArgument x:TypeArguments="x:String">hayabpy@naver.com</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -698,7 +700,7 @@
                 <OutArgument x:TypeArguments="x:String">[strMailPw]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">nqnwkek2r</InArgument>
+                <InArgument x:TypeArguments="x:String">hayakt0108273&amp;</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
           </scg:List>
@@ -715,30 +717,30 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">250,183.6</av:Point>
-              <av:Size x:Key="ShapeSize">200,112.8</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">450,240 480,240 480,345.6 500,345.6</av:PointCollection>
+              <av:Size x:Key="ShapeSize">200,108</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">450,237.6 480,237.6 480,344.1 500,344.1</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="2. 네이버 뉴스에서 새로운 뉴스 확인" sap:VirtualizedContainerService.HintSize="200,112.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+          <Sequence sap2010:Annotation.AnnotationText="2. 네이버 뉴스에서 새로운 뉴스 확인" sap:VirtualizedContainerService.HintSize="526,1913" sap2010:WorkflowViewState.IdRef="Sequence_29">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="2-1. 네이버 뉴스 검색 화면 접속하기" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="483.2,96.8" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[&quot;https://search.naver.com/search.naver?where=news&amp;query=&quot;+  strSearchText +&quot;&amp;sm=tab_srt&amp;sort=1&amp;photo=0&amp;field=0&amp;reporter_article=&amp;pd=0&amp;ds=&amp;de=&amp;docid=&amp;nso=so%3Add%2Cp%3Aall%2Ca%3Aall&amp;mynews=0&amp;refresh_start=0&amp;related=0&quot;]">
+            <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="2-1. 네이버 뉴스 검색 화면 접속하기" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="484,501" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[&quot;https://search.naver.com/search.naver?where=news&amp;query=&quot;+  strSearchText +&quot;&amp;sm=tab_srt&amp;sort=1&amp;photo=0&amp;field=0&amp;reporter_article=&amp;pd=0&amp;ds=&amp;de=&amp;docid=&amp;nso=so%3Add%2Cp%3Aall%2Ca%3Aall&amp;mynews=0&amp;refresh_start=0&amp;related=0&quot;]">
               <ui:OpenBrowser.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,375.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,371" sap2010:WorkflowViewState.IdRef="Sequence_28">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="2-2. 검색화면에서 검색건수 가져오기" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="333.6,138.4" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                    <ui:GetValue ContinueOnError="{x:Null}" Value="{x:Null}" sap2010:Annotation.AnnotationText="2-2. 검색화면에서 검색건수 가져오기" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,137" sap2010:WorkflowViewState.IdRef="GetValue_2">
                       <ui:GetValue.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="52015ed8d08335b7309945df0c9df431" Selector="&lt;html title='* 네이버 뉴스검색' /&gt;&lt;webctrl aaname='*건' parentid='main_pack' tag='SPAN' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -749,16 +751,13 @@
                           </ui:Target.WaitForReady>
                         </ui:Target>
                       </ui:GetValue.Target>
-                      <ui:GetValue.Value>
-                        <OutArgument x:TypeArguments="x:String">[strNowNewsCount]</OutArgument>
-                      </ui:GetValue.Value>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:GetValue>
-                    <Assign sap2010:Annotation.AnnotationText="2-3. 검색건수 문자열에서 검색건수 숫자 추출하기" sap:VirtualizedContainerService.HintSize="333.6,104" sap2010:WorkflowViewState.IdRef="Assign_29">
+                    <Assign sap2010:Annotation.AnnotationText="2-3. 검색건수 문자열에서 검색건수 숫자 추출하기" sap:VirtualizedContainerService.HintSize="334,102" sap2010:WorkflowViewState.IdRef="Assign_29">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strNowNewsCount]</OutArgument>
                       </Assign.To>
@@ -782,7 +781,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:OpenBrowser>
-            <ui:ReadTextFile sap2010:Annotation.AnnotationText="2-4. 텍스트 파일에서 지난번 검색건수 가져오기" Content="[strRecentNewsCount]" DisplayName="Read Text File" FileName="총뉴스건수.txt" sap:VirtualizedContainerService.HintSize="483.2,96.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+            <ui:ReadTextFile sap2010:Annotation.AnnotationText="2-4. 텍스트 파일에서 지난번 검색건수 가져오기" Content="[strRecentNewsCount]" DisplayName="Read Text File" FileName="총뉴스건수.txt" sap:VirtualizedContainerService.HintSize="484,163" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -791,7 +790,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ReadTextFile>
-            <If sap2010:Annotation.AnnotationText="2-5. 새로운 뉴스가 없으면 종료하기" Condition="[Convert.ToInt32(strNowNewsCount) &lt;= Convert.ToInt32(strRecentNewsCount)]" sap:VirtualizedContainerService.HintSize="483.2,96.8" sap2010:WorkflowViewState.IdRef="If_10">
+            <If sap2010:Annotation.AnnotationText="2-5. 새로운 뉴스가 없으면 종료하기" Condition="[Convert.ToInt32(strNowNewsCount) &lt;= Convert.ToInt32(strRecentNewsCount)]" sap:VirtualizedContainerService.HintSize="484,728" sap2010:WorkflowViewState.IdRef="If_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -834,7 +833,7 @@
                 </Sequence>
               </If.Then>
             </If>
-            <If sap2010:Annotation.AnnotationText="2-6. 새로운 뉴스가 있으면 취합할 최대 뉴스 개수 정하기" Condition="[intMaxSearch &gt; Convert.ToInt32(strNowNewsCount) - Convert.ToInt32(strRecentNewsCount)]" sap:VirtualizedContainerService.HintSize="483.2,240.8" sap2010:WorkflowViewState.IdRef="If_11">
+            <If sap2010:Annotation.AnnotationText="2-6. 새로운 뉴스가 있으면 취합할 최대 뉴스 개수 정하기" Condition="[intMaxSearch &gt; Convert.ToInt32(strNowNewsCount) - Convert.ToInt32(strRecentNewsCount)]" sap:VirtualizedContainerService.HintSize="484,278" sap2010:WorkflowViewState.IdRef="If_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -857,11 +856,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">500,295.6</av:Point>
-                  <av:Size x:Key="ShapeSize">200,100</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">600,395.6 600,420 450,420</av:PointCollection>
+                  <av:Size x:Key="ShapeSize">200,97</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">600,392.6 600,418.5 450,418.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="3. 뉴스 목록 추출" DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="200,100" sap2010:WorkflowViewState.IdRef="Sequence_35">
+              <Sequence sap2010:Annotation.AnnotationText="3. 뉴스 목록 추출" DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_35">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
                 </Sequence.Variables>
@@ -924,11 +923,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">250,370</av:Point>
-                      <av:Size x:Key="ShapeSize">200,100</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">250,420 220,420 220,475.6 200,475.6</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">200,97</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">250,418.5 220,418.5 220,474.1 200,474.1</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap2010:Annotation.AnnotationText="4. 유사 뉴스 선별" sap:VirtualizedContainerService.HintSize="938.4,1297.6" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                  <Sequence sap2010:Annotation.AnnotationText="4. 유사 뉴스 선별" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_39">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1061,11 +1060,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">0,425.6</av:Point>
-                          <av:Size x:Key="ShapeSize">200,100</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">100,525.6 100,575.6 250,575.6</av:PointCollection>
+                          <av:Size x:Key="ShapeSize">200,97</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">100,522.6 100,574.1 250,574.1</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence sap2010:Annotation.AnnotationText="5. 뉴스 등록일 산출" sap:VirtualizedContainerService.HintSize="200,100" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                      <Sequence sap2010:Annotation.AnnotationText="5. 뉴스 등록일 산출" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_43">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1218,10 +1217,10 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">250,525.6</av:Point>
-                              <av:Size x:Key="ShapeSize">200,100</av:Size>
+                              <av:Size x:Key="ShapeSize">200,97</av:Size>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence sap2010:Annotation.AnnotationText="6. 뉴스레터 제작 및 발송" sap:VirtualizedContainerService.HintSize="475.2,1455.2" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                          <Sequence sap2010:Annotation.AnnotationText="6. 뉴스레터 제작 및 발송" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_44">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1345,10 +1344,10 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">500,183.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,84</av:Size>
+          <av:Size x:Key="ShapeSize">200,82</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="3-4. 결과 확인" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="테스트.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="3-4. 결과 확인" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,82" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" WorkbookPath="테스트.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -1377,10 +1376,10 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,288</av:Point>
-          <av:Size x:Key="ShapeSize">200,84</av:Size>
+          <av:Size x:Key="ShapeSize">200,82</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="4-6. 결과 확인" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" WorkbookPath="테스트.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="4-6. 결과 확인" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,82" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" WorkbookPath="테스트.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>

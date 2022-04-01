@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xd+pPygcWD/zliUNe/zLw3wlnDJ8IWhgpjlLJ5bmwsBlGycsGALPnAV2qqx6TVzntDYFwYw7XmHNmP0BkBmrKw==",
+  "dgSpecHash": "onSEMCvZB7dCHwG5m7inKTiS6fseL9VULCK71ocST4Ud5qbmubJ6YnlhMHnxNVSbmmNm73KvlX+6Vy2kThPh2A==",
   "success": true,
-  "projectFilePath": "D:\\big\\RPA\\rpa-master\\rpa-master\\3_1.연습용로봇_시청률가져오기\\.local\\",
+  "projectFilePath": "F:\\big\\RPA\\rpa-master\\rpa-master\\3_1.연습용로봇_시청률가져오기\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\avalonedit\\5.0.3\\avalonedit.5.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\bouncycastle\\1.8.5\\bouncycastle.1.8.5.nupkg.sha512",

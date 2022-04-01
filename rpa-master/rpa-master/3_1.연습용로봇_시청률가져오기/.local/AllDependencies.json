@@ -825,7 +825,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win7-x86": {
+    ".NETFramework,Version=v4.6.1/win10-x64": {
       "AvalonEdit/5.0.3": {
         "type": "package",
         "compile": {
@@ -2425,9 +2425,9 @@
     "restore": {
       "projectUniqueName": "연습용로봇_시청률 가져오기",
       "projectName": "연습용로봇_시청률 가져오기",
-      "projectPath": "D:\\big\\RPA\\rpa-master\\rpa-master\\3_1.연습용로봇_시청률가져오기\\.local",
+      "projectPath": "F:\\big\\RPA\\rpa-master\\rpa-master\\3_1.연습용로봇_시청률가져오기\\.local",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\big\\RPA\\rpa-master\\rpa-master\\3_1.연습용로봇_시청률가져오기\\.local"
+      "outputPath": "F:\\big\\RPA\\rpa-master\\rpa-master\\3_1.연습용로봇_시청률가져오기\\.local"
     },
     "frameworks": {
       "net461": {
@@ -2453,7 +2453,12 @@
             "version": "[19.11.1, 19.11.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+      }
+    },
+    "runtimes": {
+      "win10-x64": {
+        "#import": []
       }
     }
   }
